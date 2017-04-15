@@ -1,0 +1,101 @@
+{
+  "books" : {
+    "sherlock" : {
+      "data" : [ {
+        "sentence" : "<center><h3><a name=\"1\">ADVENTURE &nbsp;I.",
+        "sentiment" : [ 0.25983, 0.44971, 0.055868, 0.022268, 0.035887 ]
+      }, {
+        "sentence" : "&nbsp; A SCANDAL IN BOHEMIA</a></h3>\r\n<br>\r\nI.",
+        "sentiment" : [ 0, 0, 0, 0, 0 ]
+      }, {
+        "sentence" : "</center>\r\n<p><br>\r\n<font size=\"+2\">T</font>o Sherlock Holmes she is always <i>the</i> woman.",
+        "sentiment" : [ 0.397946, 0.135437, 0.066884, 0.282243, 0.118259 ]
+      }, {
+        "sentence" : " I have seldom heard\r\nhim mention her under any other name.",
+        "sentiment" : [ 0.319745, 0.194955, 0.143984, 0.199522, 0.094807 ]
+      }, {
+        "sentence" : " In his eyes she eclipses\r\nand predominates the whole of her sex.",
+        "sentiment" : [ 0.150781, 0.042995, 0.077462, 0.758381, 0.037821 ]
+      }, {
+        "sentence" : " It was not that he felt\r\nany emotion akin to love for Irene Adler.",
+        "sentiment" : [ 0.066677, 0.726932, 0.053546, 0.012617, 0.028916 ]
+      }, {
+        "sentence" : " All emotions, and that\r\none particularly, were abhorrent to his cold, precise but\r\nadmirably balanced mind.",
+        "sentiment" : [ 0.190679, 0.282404, 0.156776, 0.096618, 0.193375 ]
+      }, {
+        "sentence" : " He was, I take it, the most perfect\r\nreasoning and observing machine that the world has seen, but as a\r\nlover he would have placed himself in a false position.",
+        "sentiment" : [ 0.120139, 0.549074, 0.048887, 0.06008, 0.092121 ]
+      }, {
+        "sentence" : " He never\r\nspoke of the softer passions, save with a gibe and a sneer.",
+        "sentiment" : [ 0.420815, 0.116194, 0.114516, 0.226572, 0.128776 ]
+      }, {
+        "sentence" : " They\r\nwere admirable things for the observer&#8212;excellent for drawing the\r\nveil from men&#8217;s motives and actions.",
+        "sentiment" : [ 0.041588, 0.618863, 0.04148, 0.146947, 0.045164 ]
+      }, {
+        "sentence" : " But for the trained reasoner\r\nto admit such intrusions into his own delicate and finely\r\nadjusted temperament was to introduce a distracting factor which\r\nmight throw a doubt upon all his mental results.",
+        "sentiment" : [ 0.178845, 0.003006, 0.155717, 0.358338, 0.532018 ]
+      }, {
+        "sentence" : " Grit in a\r\nsensitive instrument, or a crack in one of his own high-power\r\nlenses, would not be more disturbing than a strong emotion in a\r\nnature such as his.",
+        "sentiment" : [ 0.163499, 0.256024, 0.141401, 0.239013, 0.146594 ]
+      }, {
+        "sentence" : " And yet there was but one woman to him, and\r\nthat woman was the late Irene Adler, of dubious and questionable\r\nmemory.",
+        "sentiment" : [ 0.626957, 0.009103, 0.061648, 0.350233, 0.077828 ]
+      }, {
+        "sentence" : "\r\n<p>\r\nI had seen little of Holmes lately.",
+        "sentiment" : [ 0.366792, 0.069362, 0.395144, 0.116735, 0.097188 ]
+      }, {
+        "sentence" : " My marriage had drifted us\r\naway from each other.",
+        "sentiment" : [ 0.446142, 0.132814, 0.134312, 0.172843, 0.09731 ]
+      }, {
+        "sentence" : " My own complete happiness, and the\r\nhome-centred interests which rise up around the man who first\r\nfinds himself master of his own establishment, were sufficient to\r\nabsorb all my attention, while Holmes, who loathed every form of\r\nsociety with his whole Bohemian soul, remained in our lodgings in\r\nBaker Street, buried among his old books, and alternating from\r\nweek to week between cocaine and ambition, the drowsiness of the\r\ndrug, and the fierce energy of his own keen nature.",
+        "sentiment" : [ 0.204527, 0.442701, 0.031257, 0.113884, 0.062881 ]
+      }, {
+        "sentence" : " He was still,\r\nas ever, deeply attracted by the study of crime, and occupied his\r\nimmense faculties and extraordinary powers of observation in\r\nfollowing out those clues, and clearing up those mysteries which\r\nhad been abandoned as hopeless by the official police.",
+        "sentiment" : [ 0.199638, 0.018258, 0.224075, 0.363925, 0.397574 ]
+      }, {
+        "sentence" : " From time\r\nto time I heard some vague account of his doings: of his summons\r\nto Odessa in the case of the Trepoff murder, of his clearing up\r\nof the singular tragedy of the Atkinson brothers at Trincomalee,\r\nand finally of the mission which he had accomplished so\r\ndelicately and successfully for the reigning family of Holland.",
+        "sentiment" : [ 0.390157, 0.116199, 0.022709, 0.218499, 0.273023 ]
+      }, {
+        "sentence" : "\r\nBeyond these signs of his activity, however, which I merely\r\nshared with all the readers of the daily press, I knew little of\r\nmy former friend and companion.",
+        "sentiment" : [ 0.199114, 0.186644, 0.148608, 0.27215, 0.188093 ]
+      }, {
+        "sentence" : "\r\n<p>\r\nOne night&#8212;it was on the twentieth of March, 1888&#8212;I was\r\nreturning from a journey to a patient (for I had now returned to\r\ncivil practice), when my way led me through Baker Street.",
+        "sentiment" : [ 0.279931, 0.310109, 0.130086, 0.046099, 0.109898 ]
+      }, {
+        "sentence" : " As I\r\npassed the well-remembered door, which must always be associated\r\nin my mind with my wooing, and with the dark incidents of the\r\nStudy in Scarlet, I was seized with a keen desire to see Holmes\r\nagain, and to know how he was employing his extraordinary powers.",
+        "sentiment" : [ 0.26944, 0.148811, 0.396138, 0.097077, 0.03843 ]
+      }, {
+        "sentence" : "\r\nHis rooms were brilliantly lit, and, even as I looked up, I saw\r\nhis tall, spare figure pass twice in a dark silhouette against\r\nthe blind.",
+        "sentiment" : [ 0.531157, 0.010338, 0.268449, 0.236002, 0.083331 ]
+      }, {
+        "sentence" : " He was pacing the room swiftly, eagerly, with his head\r\nsunk upon his chest and his hands clasped behind him.",
+        "sentiment" : [ 0.106065, 0.013745, 0.560538, 0.379143, 0.10938 ]
+      }, {
+        "sentence" : " To me, who\r\nknew his every mood and habit, his attitude and manner told their\r\nown story.",
+        "sentiment" : [ 0.107099, 0.300715, 0.017976, 0.179871, 0.341704 ]
+      }, {
+        "sentence" : " He was at work again.",
+        "sentiment" : [ 0.265816, 0.140973, 0.455619, 0.048355, 0.043813 ]
+      }, {
+        "sentence" : " He had risen out of his\r\ndrug-created dreams and was hot upon the scent of some new\r\nproblem.",
+        "sentiment" : [ 0.292009, 0.190428, 0.269258, 0.081177, 0.102708 ]
+      }, {
+        "sentence" : " I rang the bell and was shown up to the chamber which\r\nhad formerly been in part my own.",
+        "sentiment" : [ 0.362359, 0.215502, 0.103545, 0.152311, 0.08364 ]
+      }, {
+        "sentence" : "\r\n<p>\r\nHis manner was not effusive.",
+        "sentiment" : [ 0.075049, 0.093144, 0.084364, 0.3238, 0.533364 ]
+      }, {
+        "sentence" : " It seldom was; but he was glad, I\r\nthink, to see me.",
+        "sentiment" : [ 0.079021, 0.678023, 0.03949, 0.062821, 0.022203 ]
+      }, {
+        "sentence" : " With hardly a word spoken, but with a kindly\r\neye, he waved me to an armchair, threw across his case of cigars,\r\nand indicated a spirit case and a gasogene in the corner.",
+        "sentiment" : [ 0.522268, 0.01546, 0.108381, 0.436254, 0.037366 ]
+      }, {
+        "sentence" : " Then he\r\nstood before the fire and looked me over in his singular\r\nintrospective fashion.",
+        "sentiment" : [ 0.056875, 0.282822, 0.06266, 0.358141, 0.209159 ]
+      } ],
+      "title" : "sherlock"
+    }
+  }
+}
