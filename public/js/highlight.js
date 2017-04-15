@@ -1,3 +1,75 @@
+//
+// AI CREATED ANNOTATIONS
+//
+var elems = document.getElementsByClassName("aiHighlight");
+for (var i = 0; i < elems.length; i++) {
+    // Doing a function makes each one unique
+    aiCreation();
+}
+
+function aiCreation() {
+    var comment = document.createElement("div");
+
+    // Styles
+    comment.style.backgroundColor = "#f4f4f4";
+    comment.style.width = "20vw";
+    comment.innerHTML = "<b>Ernest.ai suggested this annotation for you! </b>";
+    comment.id = "comment" + count;
+    comment.style.display = "none";
+    comment.contentEditable = "false";
+    comment.className = "annotationedNotes";
+    comment.style.padding = "15px";
+    comment.style.marginRight = "30px";
+    comment.style.minHeight = "250px"
+    // Double click editing
+    comment.ondblclick = function () {
+        this.contentEditable = true;
+
+        //Some sort of thing to know hwat you are editing...
+        // span.style.fontWeight = "bold";
+    }
+    comment.onblur = function () {
+        this.contentEditable = false;
+    }
+    elems[i].addEventListener("mouseover", function () {
+
+        this.style.backgroundColor = "#bcd1ff";
+    });
+
+    elems[i].addEventListener("mouseleave", function () {
+        this.style.backgroundColor = "#e2ebff";
+    });
+
+    document.getElementById("comments").appendChild(comment);
+
+    // Event to hide all other notes after you click this one
+    elems[i].addEventListener("click", function () {
+        if (comment.style.display == "none") {
+            // Hide all other elements
+            var d = document.getElementsByClassName("annotationedNotes");
+            for (var i = 0; i < d.length; i++) {
+                d[i].style.display = "none";
+            }
+            comment.style.display = "block";
+        } else {
+            comment.style.display = "none";
+        }
+    });
+}
+
+// HIDE ALL ANNOTATIONED NOTES
+var elems = document.getElementsByClassName("annotationedNotes");
+    for (var i = 0; i < elems.length; i++) {
+        elems[i].style.display = "none";
+    }
+
+//
+//  END OF AI CREATED ANNOTATIONS
+//
+
+
+
+
 var isMouseDown = false;
 var isMouseMove = false;
 var book = document.getElementById("book")
@@ -7,7 +79,7 @@ document.onmousedown = function () {
 };
 document.onmouseup = function () {
     if (isMouseMove == true) {
-        highlight("#af9");
+        highlight("#dee"); //#af9
     }
     isMouseMove = false;
     isMouseDown = false
@@ -24,17 +96,21 @@ function highlight(color) {
     var anchor = document.createElement("a");
     span.style.backgroundColor = "" + color;
     span.id = "highLight" + count;
+    span.className = "userHighlights";
+
     var comment = document.createElement("div");
 
     // Styles
-    comment.style.backgroundColor = "rgba(24, 163, 52, .7)";
-    comment.style.width = "22vw";
+    comment.style.backgroundColor = "#f4f4f4";
+    comment.style.width = "20vw";
     comment.innerHTML = "Write your annotation here.";
     comment.id = "comment" + count;
     comment.style.display = "hide";
     comment.contentEditable = "false";
     comment.className = "annotationedNotes";
-    comment.style.padding = "5px";
+    comment.style.padding = "15px";
+    comment.style.marginRight = "30px";
+    comment.style.minHeight = "250px"
 
     // Double click editing
     comment.ondblclick = function () {
@@ -62,18 +138,15 @@ function highlight(color) {
         } else {
             comment.style.display = "none";
         }
-
-        console.log("OK");
     });
 
     span.addEventListener("mouseover", function () {
-        span.style.backgroundColor = "#deefdc";
-        console.log("OK Hover");
+
+        span.style.backgroundColor = "#90EE90";
     });
 
     span.addEventListener("mouseleave", function () {
-        span.style.backgroundColor = "#90EE90";
-        console.log("OK Out");
+        span.style.backgroundColor = "#deefdc";
     });
 
     if (window.getSelection) {
@@ -90,6 +163,7 @@ function highlight(color) {
     document.getElementById("comments").appendChild(comment);
     count += 1;
 
+    // Hide all other annotations
     var elems = document.getElementsByClassName("annotationedNotes");
     for (var i = 0; i < elems.length; i++) {
         elems[i].style.display = "none";
@@ -103,8 +177,4 @@ function highlight(color) {
 // ENABLE FIXED SCROLLING
 $(window).scroll(function () {
     $("#comments").css("top", Math.max(0, 250 - $(this).scrollTop()));
-});
-
-$("span").css({
-    "color": "green"
 });

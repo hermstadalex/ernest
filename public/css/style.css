@@ -83,17 +83,40 @@ nav h1 {
 	font-family: 'Raleway', sans-serif;
 	line-height: 120%;
 	margin-right: 30px;
+	padding-left: 47px;
+	padding-right: 25px;
+}
+#bookInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+#bookTitle {
+	text-align: center;
+	margin: 65px auto 65px auto;
+	font-family: 'Roboto', sans-serif;
+}
+#by {
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 5px;
+}
+#author {
+	font-family: 'Raleway', sans-serif;
 }
 #hLine {
 	margin-top: 102px;
-	width: 2px;
+	width: 6px;
 	height: inherit;
-	background-color: #87dd87;
+/*	background-color: #87dd87;
+*/	
+	background-color: #99A7EE;
 	border-radius: 5%;
 }
 #annotations {
 	margin-left: 30px;
-	margin-right: 30px;
+	margin-right: 89px;
 	display: flex;
 	flex-direction: column;
 	flex: 2;
@@ -102,6 +125,11 @@ nav h1 {
 	min-height: 100px;
 	margin: 0 auto 0 auto;
 }
+span {
+	cursor: pointer;
+	cursor: hand;
+	transition: .05s;
+}
 #comments {
 /*	padding-top: 14%;
 */	width: 100%;
@@ -109,14 +137,15 @@ nav h1 {
 	position: fixed;
 }
 .annotationedNotes {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
+	border-top: 1px solid #f7f7f7;
+	border-right: 1px solid #f7f7f7;
+	border-left: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
 }
 .aiHighlight {
 	background-color: #e2ebff;
-}
-span {
-    cursor: pointer;
-    cursor: hand;
+	transition: .2s;
 }
 ul {
 	list-style: none;

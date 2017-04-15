@@ -6,11 +6,11 @@
 	<title>Document</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	
-	<script src="/js/highlight.js"></script>
 	<link rel='stylesheet', href="/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+ -->	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<!-- JQUERY LINK -->
 </head>
 
@@ -20,11 +20,17 @@
         <h1 id="home">ERNEST.</h1>
         <ul id="navList">
             <a href="#personalStatement"><li>ABOUT ME</li></a>
-            <a href="Rummler, Karl - Resume.pdf" target="_blank"><li>RESUME</li></a>
+            <a href="Rummler, Karl - Resume.pdf" target="_blank"><li>BOOKS</li></a>
         </ul>
     </nav>
 	<div id="globalWrap">
 		<div id="book">
+		<div id="bookInfo">
+			<h1 id="bookTitle">The Adventures of Sherlock Holmes</h1>
+			<div id="by">by</div>
+			<div id="author">Arthur Conan Doyle</div>
+			<hr>
+		</div>
             {{{bookText}}}
 		</div>
 		<div id="hLine"></div>
@@ -35,5 +41,5 @@
 	</div>
 
 </body>
-
+	<script src="/js/highlight.js"></script>
 </html>
