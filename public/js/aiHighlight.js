@@ -44,6 +44,9 @@ function aiCreation() {
 
     // Event to hide all other notes after you click this one
     elems[i].addEventListener("click", function () {
+        var divider = document.getElementById("hLine");
+        divider.style.backgroundColor = "#99A7EE"
+    
         if (comment.style.display == "none") {
             // Hide all other elements
             var d = document.getElementsByClassName("annotationedNotes");

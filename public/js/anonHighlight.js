@@ -37,6 +37,8 @@ function anonCreation() {
 
     // Event to hide all other notes after you click this one
     other.addEventListener("click", function () {
+        var divider = document.getElementById("hLine");
+        divider.style.backgroundColor = "#ffd87c"
         if (comment.style.display == "none") {
             // Hide all other elements
             var d = document.getElementsByClassName("annotationedNotes");
