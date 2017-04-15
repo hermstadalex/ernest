@@ -19,14 +19,15 @@ app.get('/', function(request, response) {
 });
 
 app.get('/collection', function(request, response) {
-  response.render('index', {
-      title: 'Homepage'
+  response.render('collection', {
+      title: 'Collection'
   });
 });
 
 app.get('/book', function(request, response) {
     bookText["text"] = aiMiddleware.suggestAnnotationFormatted();
     response.render('kbook', {
+        title: 'The Adventures of Sherlock Holmes',
         bookText: bookText["text"]
     });
 });
