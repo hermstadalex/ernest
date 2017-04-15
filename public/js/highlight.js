@@ -1,47 +1,72 @@
-function makeEditableAndHighlight(colour) {
-    sel = window.getSelection();
-    if (sel.rangeCount && sel.getRangeAt) {
-        range = sel.getRangeAt(0);
+var isMouseDown = false;
+var isMouseMove = false;
+var book = document.getElementById("book")
+document.onmousedown = function() { isMouseMove = false; isMouseDown = true  };
+document.onmouseup   = function() { 
+    if( isMouseMove == true ) {
+        highlight("#af9");
     }
-    document.designMode = "on";
-    if (range) {
-        sel.removeAllRanges();
-        sel.addRange(range);
+    isMouseMove = false;
+    isMouseDown = false 
+};
+document.onmousemove = function() { isMouseMove = true; if(isMouseDown) { /* do drag things */ } };
+
+var count = 0;
+// class Pair {
+//     constr
+//}
+
+function highlight(color) {
+    var span = document.createElement("span");
+    span.style.backgroundColor = "" + color;
+    span.id = "highLight" + count;
+    var comment = document.createElement("div");
+
+    // Styles
+    comment.style.backgroundColor = "green";
+    comment.style.width = "100%";
+    comment.style.height = "100px";
+    comment.innerHTML = "This is some text" + count;
+    comment.id = "comment" + count;
+    comment.style.display = "hide";
+    comment.contentEditable = "false";
+
+    // Double click editing
+    comment.ondblclick= function() { 
+        this.contentEditable=true;
+        this.className='inEdit';
+        //Some sort of thing to know hwat you are editing...
+        // span.style.fontWeight = "bold";
     }
-    //Use HiliteColor since some browsers apply BackColor to the whole block
-    if (!document.execCommand("HiliteColor", false, colour)) {
-        document.execCommand("BackColor", false, colour);
-        console.log("ok1");
+    comment.onblur = function() { 
+        this.contentEditable=false;
+        this.className='';
     }
-    document.designMode = "off";
 
 
-}
 
-function highlight(colour) {
-    var range, sel;
-    if (window.getSelection) {
-        // IE9 and non-IE
-        try {
-            if (!document.execCommand("BackColor", false, colour)) {
-                makeEditableAndHighlight(colour);
-                    console.log("ok1");
-            }
-        } catch (ex) {
-            makeEditableAndHighlight(colour)
+    span.addEventListener("click", function () {
+        //var comm = document.getElementById("comment" + count);
+        if (comment.style.display == "none"){
+            comment.style.display = "block";
+        } else {
+            comment.style.display = "none";
         }
-    } else if (document.selection && document.selection.createRange) {
-        // IE <= 8 case
-        range = document.selection.createRange();
-        range.execCommand("BackColor", false, colour);
+
+        console.log("OK");
+    });
+
+
+    if (window.getSelection) {
+        var sel = window.getSelection();
+        if (sel.rangeCount) {
+            var range = sel.getRangeAt(0).cloneRange();
+            range.surroundContents(span);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
     }
 
-    var spans = document.getElementsByTagName("span");
-    for(var i = spans.length -1; i >= 0; i--) {
-        console.log("OK");
-        spans[i].className = "fuksuk" + i;
-        spans[i].addEventListener("click", function () {
-            console.log(this.className);
-        });
-    }
+    document.getElementById("comments").appendChild(comment);
+    count += 1;
 }

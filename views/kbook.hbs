@@ -5,40 +5,28 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script src="/js/highlight.js"></script>
-	<link rel='stylesheet', href="/css/style.css"/>
+	<link rel='stylesheet', href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
-<style>
-	#globalWrap {
-		display: flex;
-		flex-direction: row;
-	}
-	
-	#book {
-		flex: 4;
-		background-color: yellow;
-	}
-	
-	#comments {
-		flex: 1;
-		background-color: red;
-	}
-</style>
 
 <body>
-	<input type="button" onclick="highlight('#af9')" value="highlight">
-	<input type="button" onclick="unhighlight(document.body, 'ffff00')" value="unhighlight">
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <h1 id="home">ERNEST.</h1>
+        <ul id="navList">
+            <a href="#personalStatement"><li>ABOUT ME</li></a>
+            <a href="Rummler, Karl - Resume.pdf" target="_blank"><li>RESUME</li></a>
+        </ul>
+    </nav>
 	<div id="globalWrap">
 		<div id="book">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et illum porro placeat voluptatum, saepe dolore quidem eligendi
-			incidunt quisquam ut accusamus atque alias, non ratione praesentium quod rerum molestias reprehenderit Lorem ipsum dolor
-			sit amet, consectetur adipisicing elit. Repellendus, accusantium, quisquam. Sit praesentium consequuntur delectus corporis
-			sunt hic perspiciatis commodi illum nesciunt tempore. Velit sed porro cupiditate? Placeat, impedit, porro! Lorem ipsum
-			dolor sit amet, consectetur adipisicing elit. Ut possimus in expedita modi culpa, nam est nostrum deserunt tempore aspernatur
-			rem perspiciatis veniam voluptates ipsa eius aliquid asperiores recusandae debitis. Lorem ipsum dolor sit amet, consectetur
-			adipisicing elit. Magnam, ea. Minima atque harum, commodi, fuga aliquam magni inventore ab alias eum earum iusto deserunt
-			obcaecati culpa eveniet asperiores quasi. Aliquid!
+            {{{bookText}}}
 		</div>
-		<div id="comments">is</div>
+		<div id="hLine"></div>
+		<div id="annotations">
+			<h1>Annotations</h1>
+			<div id="comments">is</div>
+		</div>
 	</div>
 
 </body>
