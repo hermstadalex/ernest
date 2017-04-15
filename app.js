@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+var bookText = require('./sherlock.json')
+
 app.set('port', (process.env.PORT || 3000));
 
 app.use(express.static(__dirname + '/public'));
@@ -12,6 +14,12 @@ app.set('view engine', 'hbs');
 app.get('/', function(request, response) {
     response.render('index', {
         title: 'Homepage'
+    });
+});
+
+app.get('/book', function(request, response) {
+    response.render('book', {
+        bookText: bookText["text"]
     });
 });
 
