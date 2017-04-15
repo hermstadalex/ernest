@@ -17,6 +17,8 @@ function highlight(color) {
     var span = document.createElement("span");
     span.style.backgroundColor = "" + color;
     span.id = "highLight" + count;
+    span.className = "userAnnotations";
+
     var comment = document.createElement("div");
 
     // Styles

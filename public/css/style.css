@@ -102,6 +102,10 @@ nav h1 {
 	min-height: 100px;
 	margin: 0 auto 0 auto;
 }
+span {
+	cursor: pointer;
+	cursor: hand;
+}
 #comments {
 /*	padding-top: 14%;
 */	width: 100%;
