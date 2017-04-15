@@ -1,0 +1,21 @@
+{
+  "name": "campusroutes",
+  "version": "0.2.5",
+  "description": "A barebones Node.js app using [Express 4](http://expressjs.com/).",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.3",
+    "firebase": "^3.6.0",
+    "hbs": "^4.0.1",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.75.0"
+  },
+  "license": "MIT"
+}
