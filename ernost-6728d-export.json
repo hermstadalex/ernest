@@ -35,7 +35,7 @@
         "sentence" : " But for the trained reasoner\r\nto admit such intrusions into his own delicate and finely\r\nadjusted temperament was to introduce a distracting factor which\r\nmight throw a doubt upon all his mental results.",
         "sentiment" : [ 0.178845, 0.003006, 0.155717, 0.358338, 0.532018 ]
       }, {
-        "sentence" : " <span id=\"anonAnnotate\">Grit in a\r\nsensitive instrument, or a crack in one of his own high-power\r\nlenses, would not be more disturbing than a strong emotion in a\r\nnature such as his.</span>",
+        "sentence" : " Grit in a\r\nsensitive instrument, or a crack in one of his own high-power\r\nlenses, would not be more disturbing than a strong emotion in a\r\nnature such as his.",
         "sentiment" : [ 0.163499, 0.256024, 0.141401, 0.239013, 0.146594 ]
       }, {
         "sentence" : " And yet there was but one woman to him, and\r\nthat woman was the late Irene Adler, of dubious and questionable\r\nmemory.",
@@ -50,7 +50,7 @@
         "sentence" : " My own complete happiness, and the\r\nhome-centred interests which rise up around the man who first\r\nfinds himself master of his own establishment, were sufficient to\r\nabsorb all my attention, while Holmes, who loathed every form of\r\nsociety with his whole Bohemian soul, remained in our lodgings in\r\nBaker Street, buried among his old books, and alternating from\r\nweek to week between cocaine and ambition, the drowsiness of the\r\ndrug, and the fierce energy of his own keen nature.",
         "sentiment" : [ 0.204527, 0.442701, 0.031257, 0.113884, 0.062881 ]
       }, {
-        "sentence" : " He was still,\r\nas ever, deeply attracted by the study of crime, and occupied his\r\nimmense faculties and extraordinary powers of observation in\r\nfollowing out those clues, and clearing up those mysteries which\r\nhad been abandoned as hopeless by the official police.",
+        "sentence" : "<span id=\"anonAnnotate\"> He was still,\r\nas ever, deeply attracted by the study of crime, and occupied his\r\nimmense faculties and extraordinary powers of observation in\r\nfollowing out those clues, and clearing up those mysteries which\r\nhad been abandoned as hopeless by the official police.</span>",
         "sentiment" : [ 0.199638, 0.018258, 0.224075, 0.363925, 0.397574 ]
       }, {
         "sentence" : " From time\r\nto time I heard some vague account of his doings: of his summons\r\nto Odessa in the case of the Trepoff murder, of his clearing up\r\nof the singular tragedy of the Atkinson brothers at Trincomalee,\r\nand finally of the mission which he had accomplished so\r\ndelicately and successfully for the reigning family of Holland.",
