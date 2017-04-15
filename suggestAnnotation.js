@@ -1,6 +1,6 @@
 var sentiments = require('./ernost-6728d-export.json');
 
-function suggestAnnotation(){
+function suggestAnnotation() {
   data = sentiments.books.sherlock.data;
 
   // list of {dist, index} pairs
@@ -46,4 +46,27 @@ function suggestAnnotation(){
   console.log(data[topN[3].index].sentence);
 
   return topN.slice(0,5);
+}
+
+module.exports = { suggestAnnotationFormatted: function() {
+  var topN = suggestAnnotation();
+  var bookFormatted = "";
+  var isHighlighted = false;
+  data = sentiments.books.sherlock.data;
+
+  for(i = 0; i < data.length; i++) {
+    for(j = 0; j < topN.length; j++) {
+      if(i == topN[j].index){
+        bookFormatted += ("<span class=\"aiHighlight\">" + data[i].sentence + "</span>");
+        isHighlighted = true;
+      }
+    }
+    if(!isHighlighted) {
+      bookFormatted += data[i].sentence;
+    }
+    isHighlighted = false;
+  }
+
+  return bookFormatted;
+}
 }

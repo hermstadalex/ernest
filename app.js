@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 var bookText = require('./sherlock.json')
+var aiMiddleware = require('./suggestAnnotation.js')
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -18,6 +19,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/book', function(request, response) {
+    bookText["text"] = aiMiddleware.suggestAnnotationFormatted();
     response.render('kbook', {
         bookText: bookText["text"]
     });
