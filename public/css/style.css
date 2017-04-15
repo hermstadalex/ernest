@@ -1,0 +1,14 @@
+#globalWrap {
+    display: flex;
+    flex-direction: row;
+}
+
+#book {
+    flex: 4;
+    background-color: yellow;
+}
+
+#comments {
+    flex: 1;
+    background-color: red;
+}

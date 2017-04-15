@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="highlight.js"></script>
+	<script src="/js/highlight.js"></script>
+	<link rel='stylesheet', href="/css/style.css"/>
 </head>
 <style>
-#globalWrap {
-	display: flex;
-	flex-direction: row;
-}
+	#globalWrap {
+		display: flex;
+		flex-direction: row;
+	}
+	
 	#book {
 		flex: 4;
 		background-color: yellow;
 	}
+	
 	#comments {
 		flex: 1;
 		background-color: red;
 	}
 </style>
+
 <body>
-<input type="button" onclick="highlight('#af9')" value="highlight">
-<input type="button" onclick="unhighlight(document.body, 'ffff00')" value="unhighlight">
-<div id="globalWrap">
-	<div id="book">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et illum porro placeat voluptatum, saepe dolore quidem eligendi incidunt quisquam ut accusamus atque alias, non ratione praesentium quod rerum molestias reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, accusantium, quisquam. Sit praesentium consequuntur delectus corporis sunt hic perspiciatis commodi illum nesciunt tempore. Velit sed porro cupiditate? Placeat, impedit, porro!	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut possimus in expedita modi culpa, nam est nostrum deserunt tempore aspernatur rem perspiciatis veniam voluptates ipsa eius aliquid asperiores recusandae debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, ea. Minima atque harum, commodi, fuga aliquam magni inventore ab alias eum earum iusto deserunt obcaecati culpa eveniet asperiores quasi. Aliquid!
- 	</div>
-	<div id="comments">is</div>	
-</div>
+	<input type="button" onclick="highlight('#af9')" value="highlight">
+	<input type="button" onclick="unhighlight(document.body, 'ffff00')" value="unhighlight">
+	<div id="globalWrap">
+		<div id="book">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et illum porro placeat voluptatum, saepe dolore quidem eligendi
+			incidunt quisquam ut accusamus atque alias, non ratione praesentium quod rerum molestias reprehenderit Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit. Repellendus, accusantium, quisquam. Sit praesentium consequuntur delectus corporis
+			sunt hic perspiciatis commodi illum nesciunt tempore. Velit sed porro cupiditate? Placeat, impedit, porro! Lorem ipsum
+			dolor sit amet, consectetur adipisicing elit. Ut possimus in expedita modi culpa, nam est nostrum deserunt tempore aspernatur
+			rem perspiciatis veniam voluptates ipsa eius aliquid asperiores recusandae debitis. Lorem ipsum dolor sit amet, consectetur
+			adipisicing elit. Magnam, ea. Minima atque harum, commodi, fuga aliquam magni inventore ab alias eum earum iusto deserunt
+			obcaecati culpa eveniet asperiores quasi. Aliquid!
+		</div>
+		<div id="comments">is</div>
+	</div>
 
 </body>
+
 </html>
