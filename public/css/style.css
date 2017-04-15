@@ -111,7 +111,9 @@ nav h1 {
 .annotationedNotes {
 	font-family: 'Lora', serif;
 }
-
+.aiHighlight {
+	background-color: #e2ebff;
+}
 ul {
 	list-style: none;
 }
