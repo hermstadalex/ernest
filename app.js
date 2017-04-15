@@ -18,6 +18,12 @@ app.get('/', function(request, response) {
     });
 });
 
+app.get('/collection', function(request, response) {
+  response.render('index', {
+      title: 'Homepage'
+  });
+});
+
 app.get('/book', function(request, response) {
     bookText["text"] = aiMiddleware.suggestAnnotationFormatted();
     response.render('kbook', {

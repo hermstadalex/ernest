@@ -35,7 +35,7 @@
         "sentence" : " But for the trained reasoner\r\nto admit such intrusions into his own delicate and finely\r\nadjusted temperament was to introduce a distracting factor which\r\nmight throw a doubt upon all his mental results.",
         "sentiment" : [ 0.178845, 0.003006, 0.155717, 0.358338, 0.532018 ]
       }, {
-        "sentence" : " Grit in a\r\nsensitive instrument, or a crack in one of his own high-power\r\nlenses, would not be more disturbing than a strong emotion in a\r\nnature such as his.",
+        "sentence" : " <span id=\"anonAnnotate\">Grit in a\r\nsensitive instrument, or a crack in one of his own high-power\r\nlenses, would not be more disturbing than a strong emotion in a\r\nnature such as his.</span>",
         "sentiment" : [ 0.163499, 0.256024, 0.141401, 0.239013, 0.146594 ]
       }, {
         "sentence" : " And yet there was but one woman to him, and\r\nthat woman was the late Irene Adler, of dubious and questionable\r\nmemory.",
