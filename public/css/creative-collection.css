@@ -158,7 +158,7 @@ section.about {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url(../img/header.jpg);
+  background-color: #5fba7d;
 }
 
 header.masthead {
@@ -170,7 +170,7 @@ header.masthead {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url(../img/header.jpg);
+  background-color: #5fba7d;
   text-align: center;
   color: #305f3f; }
   header.masthead .header-content {
