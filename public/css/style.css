@@ -114,6 +114,10 @@ nav h1 {
 .aiHighlight {
 	background-color: #e2ebff;
 }
+span {
+    cursor: pointer;
+    cursor: hand;
+}
 ul {
 	list-style: none;
 }
