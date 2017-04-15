@@ -18,7 +18,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/book', function(request, response) {
-    response.render('book', {
+    response.render('kbook', {
         bookText: bookText["text"]
     });
 });
