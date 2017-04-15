@@ -83,6 +83,8 @@ nav h1 {
 	font-family: 'Raleway', sans-serif;
 	line-height: 120%;
 	margin-right: 30px;
+	padding-left: 47px;
+	padding-right: 25px;
 }
 #bookInfo {
 	display: flex;
@@ -105,16 +107,16 @@ nav h1 {
 }
 #hLine {
 	margin-top: 102px;
-	width: 2px;
+	width: 6px;
 	height: inherit;
 /*	background-color: #87dd87;
 */	
-	background-color: #191919;
+	background-color: #99A7EE;
 	border-radius: 5%;
 }
 #annotations {
 	margin-left: 30px;
-	margin-right: 80px;
+	margin-right: 89px;
 	display: flex;
 	flex-direction: column;
 	flex: 2;
@@ -123,7 +125,7 @@ nav h1 {
 	min-height: 100px;
 	margin: 0 auto 0 auto;
 }
-a {
+span {
 	cursor: pointer;
 	cursor: hand;
 	transition: .05s;
@@ -136,6 +138,10 @@ a {
 }
 .annotationedNotes {
 	font-family: 'Raleway', sans-serif;
+	border-top: 1px solid #f7f7f7;
+	border-right: 1px solid #f7f7f7;
+	border-left: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
 }
 .aiHighlight {
 	background-color: #e2ebff;
