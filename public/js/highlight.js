@@ -21,12 +21,13 @@ function highlight(color) {
 
     // Styles
     comment.style.backgroundColor = "rgba(24, 163, 52, .7)";
-    comment.style.width = "100%";
-    comment.innerHTML = "This is some text" + count;
+    comment.style.width = "22vw";
+    comment.innerHTML = "Write your annotation here.";
     comment.id = "comment" + count;
     comment.style.display = "hide";
     comment.contentEditable = "false";
     comment.className = "annotationedNotes";
+    comment.style.padding = "5px";
 
     // Double click editing
     comment.ondblclick= function() { 
@@ -77,12 +78,12 @@ function highlight(color) {
             elems[i].style.display = "none";
         }
         comment.style.display = "block";
+    //
+    //
 }
 
-   var $window = $(window),
-       $stickyEl = $('#comment0'),
-       elTop = $stickyEl.offset().top;
 
-   $window.scroll(function() {
-        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-    });
+// ENABLE FIXED SCROLLING
+$(window).scroll(function(){
+    $("#comments").css("top",Math.max(0,250-$(this).scrollTop()));
+});
