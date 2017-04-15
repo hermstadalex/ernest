@@ -12,9 +12,6 @@ document.onmouseup   = function() {
 document.onmousemove = function() { isMouseMove = true; if(isMouseDown) { /* do drag things */ } };
 
 var count = 0;
-// class Pair {
-//     constr
-//}
 
 function highlight(color) {
     var span = document.createElement("span");
@@ -23,31 +20,36 @@ function highlight(color) {
     var comment = document.createElement("div");
 
     // Styles
-    comment.style.backgroundColor = "green";
+    comment.style.backgroundColor = "rgba(24, 163, 52, .7)";
     comment.style.width = "100%";
-    comment.style.height = "100px";
     comment.innerHTML = "This is some text" + count;
     comment.id = "comment" + count;
     comment.style.display = "hide";
     comment.contentEditable = "false";
+    comment.className = "annotationedNotes";
 
     // Double click editing
     comment.ondblclick= function() { 
         this.contentEditable=true;
-        this.className='inEdit';
+
         //Some sort of thing to know hwat you are editing...
         // span.style.fontWeight = "bold";
     }
     comment.onblur = function() { 
         this.contentEditable=false;
-        this.className='';
     }
 
 
-
+    // Hide the annotated notes and etc
     span.addEventListener("click", function () {
         //var comm = document.getElementById("comment" + count);
         if (comment.style.display == "none"){
+            // Hide all other elements
+            var elems = document.getElementsByClassName("annotationedNotes");
+            for(var i = 0; i < elems.length; i++) {
+                elems[i].style.display = "none";
+            }
+
             comment.style.display = "block";
         } else {
             comment.style.display = "none";
@@ -69,4 +71,18 @@ function highlight(color) {
 
     document.getElementById("comments").appendChild(comment);
     count += 1;
+
+    var elems = document.getElementsByClassName("annotationedNotes");
+        for(var i = 0; i < elems.length; i++) {
+            elems[i].style.display = "none";
+        }
+        comment.style.display = "block";
 }
+
+   var $window = $(window),
+       $stickyEl = $('#comment0'),
+       elTop = $stickyEl.offset().top;
+
+   $window.scroll(function() {
+        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+    });
