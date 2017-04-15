@@ -7,7 +7,7 @@ document.onmousedown = function () {
 };
 document.onmouseup = function () {
     if (isMouseMove == true) {
-        highlight("#af9");
+        highlight("#deefdc"); //#af9
     }
     isMouseMove = false;
     isMouseDown = false
@@ -24,19 +24,22 @@ function highlight(color) {
     var anchor = document.createElement("a");
     span.style.backgroundColor = "" + color;
     span.id = "highLight" + count;
-    span.className = "userAnnotations";
+    span.className = "userHighlights";
 
     var comment = document.createElement("div");
 
     // Styles
-    comment.style.backgroundColor = "rgba(24, 163, 52, .7)";
+    // comment.style.backgroundColor = "rgba(24, 163, 52, .7)";
+    comment.style.backgroundColor = "#f4f4f4";
     comment.style.width = "22vw";
     comment.innerHTML = "Write your annotation here.";
     comment.id = "comment" + count;
     comment.style.display = "hide";
     comment.contentEditable = "false";
     comment.className = "annotationedNotes";
-    comment.style.padding = "5px";
+    comment.style.padding = "15px";
+    comment.style.marginRight = "30px";
+    comment.style.minHeight = "250px"
 
     // Double click editing
     comment.ondblclick = function () {
@@ -69,13 +72,12 @@ function highlight(color) {
     });
 
     span.addEventListener("mouseover", function () {
-        span.style.backgroundColor = "#deefdc";
-        console.log("OK Hover");
+
+        span.style.backgroundColor = "#90EE90";
     });
 
     span.addEventListener("mouseleave", function () {
-        span.style.backgroundColor = "#90EE90";
-        console.log("OK Out");
+        span.style.backgroundColor = "#deefdc";
     });
 
     if (window.getSelection) {
