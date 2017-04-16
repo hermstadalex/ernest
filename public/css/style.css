@@ -6,7 +6,19 @@ html, body {
 body {
 	background-color: #F7F7F7;
 }
+#aHome {
+	text-decoration: none;
+	padding-left: 3%;
+    display: flex;
+    align-items: center;
+    flex: 3;
 
+    font-family: 'myFirstFont';
+    color: #F5F5F5;s
+}
+#home {
+	font-size: 25px;
+}
 /* START OF NAVIGATION */
 nav {
     display: flex;
@@ -20,12 +32,14 @@ nav {
     padding: 10px 0px 10px 0px;
     box-shadow: 1px 1px 1px #F0F0F0;
 }
+#navList a {
+	height: 100%;
+}
 nav h1 {
     display: flex;
     align-items: center;
     flex: 3;
 	font-size: 20px;
-    padding-left: 4%;
 
     font-family: 'myFirstFont';
     color: #F5F5F5;
@@ -63,7 +77,6 @@ nav h1 {
 #navList li:hover:after { transform: scaleX(1); }
 
 #navList a li {
-    padding-top: .5em;
 }
 /* END OF NAVIGATION */
 
@@ -110,6 +123,7 @@ nav h1 {
 	margin-top: 102px;
 	width: 6px;
 	height: inherit;
+	transition: .2s;
 /*	background-color: #87dd87;
 */	
 	background-color: #99A7EE;
@@ -155,4 +169,7 @@ ul {
 #anonAnnotate {
 	background-color: #ffebbc;
 	transition: .2s;
+}
+#mainNav {
+	background-color: #5FBA7D;
 }

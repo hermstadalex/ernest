@@ -1,12 +1,15 @@
 var express = require('express');
 var app = express();
-
+var favicon = require('serve-favicon')
+var path = require('path')
 var bookText = require('./sherlock.json')
 var aiMiddleware = require('./suggestAnnotation.js')
 
 app.set('port', (process.env.PORT || 3000));
 
 app.use(express.static(__dirname + '/public'));
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 // views is directory for all template files
 app.set('views', 'views');

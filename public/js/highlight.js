@@ -55,6 +55,9 @@ function highlight(color) {
     // Hide the annotated notes and etc
     span.addEventListener("click", function () {
         //var comm = document.getElementById("comment" + count);
+        var divider = document.getElementById("hLine");
+        divider.style.backgroundColor = "#90EE90"
+
         if (comment.style.display == "none") {
             // Hide all other elements
             var elems = document.getElementsByClassName("annotationedNotes");
@@ -70,7 +73,7 @@ function highlight(color) {
 
     span.addEventListener("mouseover", function () {
 
-        span.style.backgroundColor = "#90EE90";
+        span.style.backgroundColor = "#a2efa2";
     });
 
     span.addEventListener("mouseleave", function () {
